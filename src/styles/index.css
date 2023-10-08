@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.debbug {
+  color: red;
+  border: 1px solid red;
+}
+
+.debbug-2 {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.debbug-3 {
+  color: green;
+  border: 1px solid green;
+}
