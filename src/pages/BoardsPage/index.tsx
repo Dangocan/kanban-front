@@ -1,6 +1,14 @@
+import { useLoaderData, useNavigate } from "react-router-dom";
 import { BoardOverViewCard, Button, Input } from "../../components";
 
 function BoardsPage() {
+  const jwtToken = useLoaderData();
+  const navigate = useNavigate();
+
+  if (!jwtToken) {
+    navigate("/login");
+  }
+
   return (
     <>
       <div className="debbug-2 flex flex-col w-full">
