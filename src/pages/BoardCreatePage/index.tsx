@@ -38,6 +38,10 @@ function BoardsPage() {
     jwtToken && fetchBoards();
   }, [userState]);
 
+  React.useEffect(() => {
+    console.log({ boards });
+  }, [boards]);
+
   return (
     <>
       <div className="debbug-2 flex flex-col w-full">
